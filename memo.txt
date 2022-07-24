@@ -1,0 +1,8 @@
+###最初にビルドする###
+docker-compose build
+
+###アプリ作成###
+docker-compose run --rm front sh -c 'npx create-react-app front-app'
+
+###パッケージインストール時###
+docker-compose run front sh -c 'cd front-app && npx install'

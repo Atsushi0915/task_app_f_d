@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  front:
+    build: .
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./:/app:cached
+    command: sh -c 'cd front-app && npm start'
+    ports:
+      - '3021:3021'
+    tty: true
