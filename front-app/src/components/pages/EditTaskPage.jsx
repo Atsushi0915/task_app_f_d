@@ -37,7 +37,7 @@ export const EditTaskPage = memo(() => {
           setTaskData(resp.data.task)
         )
       })
-  }, [])
+  }, [params.id, setTaskData])
 
   return (
     <>

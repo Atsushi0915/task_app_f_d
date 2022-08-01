@@ -8,5 +8,5 @@ services:
       - ./:/app:cached
     command: sh -c 'cd front-app && npm start'
     ports:
-      - '3021:3021'
+      - '3021:3000'
     tty: true

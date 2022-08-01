@@ -28,10 +28,10 @@ const RoadingDiv = styled.div`
   min-height: 100%;
   font-style: italic;
 `
-const SReactLoading = styled(ReactLoading)`
-  align-items: center;
-  position: absolute;
-`
+// const SReactLoading = styled(ReactLoading)`
+//   align-items: center;
+//   position: absolute;
+// `
 
 const SRoadingP = styled.p`
   font-size: 20px;

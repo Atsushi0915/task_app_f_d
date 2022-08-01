@@ -1,4 +1,4 @@
-import React, { memo, useContext, useState } from 'react'
+import React, { memo, useContext } from 'react'
 import axios from 'axios'
 import styled from "styled-components";
 import { taskDeleteUrl, taskUpdataUrl } from '../../urls/urls';
@@ -16,7 +16,6 @@ export const TaskList = memo(() => {
   const { taskLists, setTaskLists } = useContext(TaskContext);
   const { completeTasks, setCompleteTasks } = useContext(CompleteTaskContext)
   const { setFlashFlag } = useContext(FlashContext)
-  const [taskId, setTaskId] = useState('')
 
 
 
@@ -58,12 +57,7 @@ export const TaskList = memo(() => {
     }
   }
 
-  const onClickTaskIdSet = () => {
-    alert('TaskId')
-  }
-
-
-
+  
   return (
     <>
       <TaskCard cardHeaderColor={"#00fbff"}
